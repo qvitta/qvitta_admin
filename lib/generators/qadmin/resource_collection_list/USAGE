@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    rails generate qadmin:resource_collection_list ResourceName
+
+    This will create:
+        admin/resource_names/_resource_collection_list.html.erb
