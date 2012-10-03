@@ -4,7 +4,9 @@
 
 <%= render 'collection_list' %>
 
-<%= link_to "New Resource", new_resource_url %>
+<div class="actions">
+  <%= link_to "New Resource", new_resource_url, class: 'btn' %>
+</div>
 
 <% content_for :sidebar do %>
   <%= render 'sidebar' %>
