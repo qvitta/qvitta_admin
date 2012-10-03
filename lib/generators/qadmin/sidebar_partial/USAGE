@@ -1,0 +1,8 @@
+Description:
+    Generates a sidebar partial
+
+Example:
+    rails generate sidebar_partial controller_name
+
+    This will create:
+        app/views/admin/controller_name/_sidebar.html.erb
