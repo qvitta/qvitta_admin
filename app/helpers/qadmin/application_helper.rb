@@ -20,5 +20,13 @@ module Qadmin
     def form_attributes_for(model)
       model.accessible_attributes.select {|attr| !attr.blank? }
     end
+
+    def show_attributes_for(model)
+      if model.respond_to?(:show_attributes)
+        model.show_attributes
+      else
+        model.class.accessible_attributes.select {|attr| !attr.blank? }
+      end
+    end
   end
 end
