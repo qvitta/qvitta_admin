@@ -1,4 +1,4 @@
-module Qadmin
+module QAdmin
   class ResourceCollectionListGenerator < Rails::Generators::NamedBase
     source_root File.expand_path('../../../../../app/views/admin/base', __FILE__)
 

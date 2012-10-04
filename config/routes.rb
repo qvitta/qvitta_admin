@@ -1,2 +1,2 @@
-Qadmin::Engine.routes.draw do
+QAdmin::Engine.routes.draw do
 end
