@@ -2,11 +2,11 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "qadmin/version"
+require "q_admin/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "qvitta_admin"
+  s.name        = "q_admin"
   s.version     = QAdmin::VERSION
   s.authors     = ["Héctor Barrientos", "Jorge Calás"]
   s.email       = ["ticaje@qvitta.net", "calas@qvitta.net"]

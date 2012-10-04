@@ -1,1 +1,1 @@
-require 'qadmin'
+require 'q_admin'
