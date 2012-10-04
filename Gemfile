@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source 'https://rubygems.org'
 
 # Declare your gem's dependencies in q_admin.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -15,3 +15,6 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+
+gem 'yard'
+gem 'redcarpet'
