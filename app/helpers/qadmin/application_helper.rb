@@ -1,4 +1,4 @@
-module Qadmin
+module QAdmin
   module ApplicationHelper
     def admin_menu_link(resources)
       text = I18n.t("admin.menu.#{resources}", default: resources.to_s.titleize)

@@ -1,4 +1,4 @@
-class Qadmin::ResourceIndexViewGenerator < Rails::Generators::NamedBase
+class QAdmin::ResourceIndexViewGenerator < Rails::Generators::NamedBase
   source_root File.expand_path('../../../../../app/views/admin/base', __FILE__)
 
   def copy_index_view_files

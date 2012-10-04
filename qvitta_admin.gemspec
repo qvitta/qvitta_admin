@@ -7,12 +7,12 @@ require "qadmin/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "qvitta_admin"
-  s.version     = Qadmin::VERSION
+  s.version     = QAdmin::VERSION
   s.authors     = ["Héctor Barrientos", "Jorge Calás"]
   s.email       = ["ticaje@qvitta.net", "calas@qvitta.net"]
   s.homepage    = ""
-  s.summary     = "Summary of Qadmin."
-  s.description = "Description of Qadmin."
+  s.summary     = "Summary of QAdmin."
+  s.description = "Description of QAdmin."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
