@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = QAdmin::VERSION
   s.authors     = ["Héctor Barrientos", "Jorge Calás"]
   s.email       = ["ticaje@qvitta.net", "calas@qvitta.net"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/qvitta/qvitta_admin"
   s.summary     = "Summary of QAdmin."
   s.description = "Description of QAdmin."
 
