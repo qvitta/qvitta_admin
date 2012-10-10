@@ -1,6 +1,4 @@
-<% content_for(:title) do %>
-  <h1><%= resource_class.name %>: <%= resource.name %></h1>
-<% end %>
+<%= render 'resource_title' %>
 
 <%= content_tag_for(:article, resource) do  %>
   <% show_attributes_for(resource).each do |attribute| %>
@@ -11,7 +9,11 @@
   <% end %>
 <% end %>
 
-<%= link_to "Back to List", collection_url, class: 'btn' %>
+<div class="show-actions">
+  <%= link_to "Back to List", collection_url, class: 'btn' %>
+  <%= link_to "Edit #{resource_class.name}", edit_resource_url(resource), class: 'btn' %>
+  <%= link_to "Delete #{resource_class.name}", resource_url(resource), method: :delete, confirm: "Are you sure?", class: 'btn btn-danger' %>
+</div>
 
 <% content_for :sidebar do  %>
   <%= render "sidebar" %>
