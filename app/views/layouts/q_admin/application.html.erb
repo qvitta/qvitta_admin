@@ -1,14 +1,28 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-  <title>QAdmin</title>
-  <%= stylesheet_link_tag    "q_admin/application", :media => "all" %>
-  <%= javascript_include_tag "q_admin/application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Admin <%= controller_name %>::<%= action_name %></title>
+    <%= stylesheet_link_tag 'q_admin/application' %>
+    <%= javascript_include_tag 'q_admin/application' %>
+  </head>
+  <body>
+    <%= render 'layouts/q_admin/header' %>
 
-<%= yield %>
+    <div id="page" class="container-fluid">
+      <div id="content" class="row-fluid">
+        <% if content_for? :sidebar %>
+          <div id="sidebar" class="span3">
+            <%= yield(:sidebar) %>
+          </div>
+        <% end %>
 
-</body>
+        <div id="main" class="<%= (content_for?(:sidebar) ? 'span9' : 'span12').html_safe %>">
+          <div class="row-fluid title"><%= yield(:title) %></div>
+          <%= render 'layouts/q_admin/flash_messages' %>
+          <%= yield %>
+        </div>
+
+      </div>
+    </div>
+  </body>
 </html>

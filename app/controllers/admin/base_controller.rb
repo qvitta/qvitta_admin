@@ -1,5 +1,7 @@
 # encoding: utf-8
-class Admin::BaseController < InheritedResources::Base
+class Admin::BaseController < QAdmin::ApplicationController
+  inherit_resources
+
   respond_to :html, :js
 
   helper QAdmin::ApplicationHelper
