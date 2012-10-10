@@ -1,0 +1,8 @@
+Description:
+    Generates the admin menu partial for customizations
+
+Example:
+    rails generate q_admin:layout_menu
+
+    This will create:
+        app/views/layouts/q_admin/_menu.html.erb
